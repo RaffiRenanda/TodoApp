@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todoapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TodoApp">
+        <activity android:name=".RegisterJava" android:label="@string/judul2"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Result_Task_Layout" android:label="@string/judul3" android:parentActivityName=".Task_Layout"
+            android:exported="false" />
+        <activity
+            android:name=".Task_Layout" android:label="@string/judul1" android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity" android:label="@string/judul"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+

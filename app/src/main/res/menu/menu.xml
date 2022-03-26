@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/meSubm"
+        android:title="Submit" />
+    <item
+        android:id="@+id/meOut"
+        android:title="Log-Out" />
+
+</menu>

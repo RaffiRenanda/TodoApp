@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coklat">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="608dp"
+        android:text="@string/Iddaftar"
+        android:textColor="@color/coklatmuda"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="Nama"
+        android:textColor="@color/coklatmuda"
+        app:layout_constraintBottom_toTopOf="@+id/RegNama"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/RegNama"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/custom_input_dua"
+        android:drawableStart="@drawable/ic_account"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/enama"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="Email"
+        android:textColor="@color/coklatmuda"
+        app:layout_constraintBottom_toTopOf="@+id/RegEmail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/custom_input_dua"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/eemail"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:textColor="@color/coklat"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="Password"
+        android:textColor="@color/coklatmuda"
+        app:layout_constraintBottom_toTopOf="@+id/RegPass"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/RegPass"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/custom_input_dua"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableRight="@drawable/ic_eye_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/epass"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="Re-Password"
+        android:textColor="@color/coklatmuda"
+        app:layout_constraintBottom_toTopOf="@+id/RegRepas"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/RegRepas"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/custom_input_dua"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/erepass"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrasiBaru"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/btRegistrasiAwal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegRepas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxpass"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/RegRepas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/RegPass"
+        app:layout_constraintTop_toBottomOf="@+id/RegEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxpass2"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/RegRepas"
+        app:layout_constraintTop_toBottomOf="@+id/RegPass" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotodosignup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
